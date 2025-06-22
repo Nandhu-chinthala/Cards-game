@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess the Card</title>
+  <link rel="stylesheet" href="game1.css">
+</head>
+<body>
+   <h1>🃏 Guess the Hidden Card</h1>
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="front" id="cardFront"></div>
+      <div class="back" id="cardBack"></div>
+    </div>
+  </div>
+  <div class="hint" id="hint"></div>
+  <div>
+    <input type="text" id="guessInput" placeholder="e.g., A of hearts, 10 of spades, K of diamonds" autocomplete="off"/>
+    <button onclick="checkGuess()">Guess</button>
+  </div>
+  <p id="message"></p>
+  <button class="restart-btn" onclick="restartGame()">🔁 Restart</button>
+  <a class="back-link" href="../home/Homepage.html">⬅ Back to Menu</a>
+  <script src="game1.js"></script>
+</body>
+</html>
